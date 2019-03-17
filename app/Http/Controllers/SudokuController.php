@@ -28,7 +28,7 @@ class SudokuController extends Controller
 				return $arrayResult;
 			}
 			else {
-				dd("Tidak ada solusi yang tersedia");
+				return ["code"=>500,"message"=>"Tidak ada solusi yang tersedia"];
 			}
 		}
 		else {
